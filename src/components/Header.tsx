@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,8 +27,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
-            <img src="/images/logo.png" alt="South Hill View Trading PLC" className="h-12" />
-            <div className="hidden md:block">
+            <div>
               <h1 className="text-company-primary text-xl font-bold">South Hill View</h1>
               <p className="text-sm text-gray-600">Trading PLC</p>
             </div>
@@ -45,27 +46,62 @@ const Header = () => {
               </button>
               <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <Link to="/about" className="block px-4 py-2 hover:bg-gray-50">Company Profile</Link>
-                <Link to="/team" className="block px-4 py-2 hover:bg-gray-50">Our Team</Link>
                 <Link to="/values" className="block px-4 py-2 hover:bg-gray-50">Our Values</Link>
               </div>
             </div>
             
-            <div className="relative group">
-              <button 
-                className="flex items-center gap-1 font-medium hover:text-company-primary transition-colors"
-                onClick={() => toggleDropdown('services')}
-              >
-                Services <ChevronDown size={16} />
-              </button>
-              <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <Link to="/construction" className="block px-4 py-2 hover:bg-gray-50">Construction</Link>
-                <Link to="/import-export" className="block px-4 py-2 hover:bg-gray-50">Import & Export</Link>
-                <Link to="/mining" className="block px-4 py-2 hover:bg-gray-50">Mining</Link>
-                <Link to="/investment" className="block px-4 py-2 hover:bg-gray-50">Investment</Link>
-              </div>
-            </div>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-company-primary">Services</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link to="/construction" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none">Construction</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              High-quality infrastructure projects and developments
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link to="/import-export" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none">Import & Export</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Global trade and logistics solutions
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link to="/mining" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none">Mining</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Exploration and development of mineral resources
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link to="/investment" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none">Investment</div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              Strategic investments in high-growth sectors
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             
-            <Link to="/projects" className="font-medium hover:text-company-primary transition-colors">Projects</Link>
             <Link to="/news" className="font-medium hover:text-company-primary transition-colors">News</Link>
             <Link to="/contact" className="font-medium hover:text-company-primary transition-colors">Contact</Link>
           </nav>
@@ -109,13 +145,6 @@ const Header = () => {
                       onClick={closeMenu}
                     >
                       Company Profile
-                    </Link>
-                    <Link 
-                      to="/team" 
-                      className="block py-2 hover:text-company-primary"
-                      onClick={closeMenu}
-                    >
-                      Our Team
                     </Link>
                     <Link 
                       to="/values" 
@@ -169,14 +198,6 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              
-              <Link 
-                to="/projects" 
-                className="font-medium py-2 hover:text-company-primary transition-colors"
-                onClick={closeMenu}
-              >
-                Projects
-              </Link>
               
               <Link 
                 to="/news" 

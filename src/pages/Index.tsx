@@ -45,26 +45,27 @@ const Index = () => {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img 
-                src="/images/about-1.jpg" 
-                alt="South Hill View Office" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
-              />
-              <img 
-                src="/images/about-2.jpg" 
-                alt="Construction Site" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-8" 
-              />
-              <img 
-                src="/images/about-3.jpg" 
-                alt="Mining Operation" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-4" 
-              />
-              <img 
-                src="/images/about-4.jpg" 
-                alt="Export Products" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
-              />
+              <div className="rounded-lg shadow-lg w-full h-64 bg-gray-100 flex items-center justify-center p-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-company-primary" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h89.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"/>
+                  <path fill="currentColor" d="M447.1 96c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64zm-192 64c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H255.1zM384 352c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32H384zM576 224c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm-48 64c-44.2 0-80 35.8-80 80v48c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32V368c0-44.2-35.8-80-80-80z" />
+                </svg>
+              </div>
+              <div className="rounded-lg shadow-lg w-full h-64 bg-gray-100 flex items-center justify-center p-6 transform translate-y-8">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-company-primary" viewBox="0 0 576 512">
+                  <path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+                </svg>
+              </div>
+              <div className="rounded-lg shadow-lg w-full h-64 bg-gray-100 flex items-center justify-center p-6 transform translate-y-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-company-primary" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M505.8 77.2l-67.5-67.4c-8.3-8.3-21.8-8.3-30.1 0l-35.8 35.8c-8.3 8.3-8.3 21.8 0 30.1l67.5 67.5c8.3 8.3 21.8 8.3 30.1 0l35.8-35.8c8.3-8.4 8.3-21.9 0-30.2zm-214.3-.1L208.9 160H128v80l-76.4 76.4c-8.4 8.4-8.4 22 0 30.4l67.2 67.2c8.4 8.4 22 8.4 30.4 0L225.6 338l4.4 4.4c8.4 8.4 22 8.4 30.4 0l67.3-67.3c8.4-8.4 8.4-22 0-30.4l-72.4-72.4 82.6-82.6c8.3-8.3 8.3-21.8 0-30.1l-67.5-67.5c-8.3-8.3-21.8-8.3-30.1 0z"/>
+                </svg>
+              </div>
+              <div className="rounded-lg shadow-lg w-full h-64 bg-gray-100 flex items-center justify-center p-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-company-primary" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48zm368-48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48z"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +85,9 @@ const Index = () => {
             {/* Construction */}
             <div className="service-card group">
               <div className="h-16 w-16 bg-company-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 group-hover:bg-company-primary transition-all duration-300">
-                <Building className="text-company-primary group-hover:text-white transition-colors" size={32} />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-company-primary group-hover:text-white transition-colors" viewBox="0 0 576 512">
+                  <path fill="currentColor" d="M208 64a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM9.8 214.8c5.1-12.2 19.1-18 31.4-12.9L60.7 210l22.9-38.1C99.9 144.6 129.3 128 161 128c51.4 0 97 32.9 113.3 81.7l34.6 103.7 79.3 33.1 34.2-45.6c6.4-8.5 16.6-13.3 27.2-12.8s20.3 6.4 25.8 15.5l96 160c5.9 9.9 6.1 22.2 .4 32.2s-16.3 16.2-27.8 16.2H288c-11.1 0-21.4-5.7-27.2-15.2s-6.4-21.2-1.4-31.1l16-32c5.4-10.8 16.5-17.7 28.6-17.7h32l22.5-30L22.8 246.2c-12.2-5.1-18-19.1-12.9-31.4zm82.8 91.8l112 48c11.8 5 19.4 16.6 19.4 29.4v96c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V384c0-12.8 7.6-24.4 19.4-29.4l112-48c7.8-3.3 16.8-3.3 24.6 0z"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-4">Construction</h3>
               <p className="text-gray-600 mb-6">
@@ -99,7 +102,9 @@ const Index = () => {
             {/* Import & Export */}
             <div className="service-card group">
               <div className="h-16 w-16 bg-company-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 group-hover:bg-company-primary transition-all duration-300">
-                <Truck className="text-company-primary group-hover:text-white transition-colors" size={32} />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-company-primary group-hover:text-white transition-colors" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48zm368-48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48z"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-4">Import & Export</h3>
               <p className="text-gray-600 mb-6">
@@ -114,7 +119,9 @@ const Index = () => {
             {/* Mining */}
             <div className="service-card group">
               <div className="h-16 w-16 bg-company-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 group-hover:bg-company-primary transition-all duration-300">
-                <Mountain className="text-company-primary group-hover:text-white transition-colors" size={32} />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-company-primary group-hover:text-white transition-colors" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M505.8 77.2l-67.5-67.4c-8.3-8.3-21.8-8.3-30.1 0l-35.8 35.8c-8.3 8.3-8.3 21.8 0 30.1l67.5 67.5c8.3 8.3 21.8 8.3 30.1 0l35.8-35.8c8.3-8.4 8.3-21.9 0-30.2zm-214.3-.1L208.9 160H128v80l-76.4 76.4c-8.4 8.4-8.4 22 0 30.4l67.2 67.2c8.4 8.4 22 8.4 30.4 0L225.6 338l4.4 4.4c8.4 8.4 22 8.4 30.4 0l67.3-67.3c8.4-8.4 8.4-22 0-30.4l-72.4-72.4 82.6-82.6c8.3-8.3 8.3-21.8 0-30.1l-67.5-67.5c-8.3-8.3-21.8-8.3-30.1 0z"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-4">Mining</h3>
               <p className="text-gray-600 mb-6">
@@ -129,7 +136,9 @@ const Index = () => {
             {/* Strategic Investment */}
             <div className="service-card group">
               <div className="h-16 w-16 bg-company-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 group-hover:bg-company-primary transition-all duration-300">
-                <TrendingUp className="text-company-primary group-hover:text-white transition-colors" size={32} />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-company-primary group-hover:text-white transition-colors" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M256 48c0-26.5 21.5-48 48-48H592c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H381.3c1.8-5 2.7-10.4 2.7-16V253.3c18.6-6.6 32-24.4 32-45.3V176c0-26.5-21.5-48-48-48H256V48zM571.3 347.3c6.2-6.2 6.2-16.4 0-22.6l-64-64c-6.2-6.2-16.4-6.2-22.6 0l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L480 311.5V432c0 8.8 7.2 16 16 16s16-7.2 16-16V311.5l36.7 36.7c6.2 6.2 16.4 6.2 22.6 0zM0 176c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H16c-8.8 0-16-7.2-16-16V176zm352 80V480c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V256H352z"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-4">Strategic Investment</h3>
               <p className="text-gray-600 mb-6">
@@ -200,90 +209,6 @@ const Index = () => {
             <Link to="/about" className="btn-secondary">
               Discover Our Approach
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-            <h2 className="section-heading">Featured Projects</h2>
-            <Link to="/projects" className="flex items-center font-medium text-company-primary hover:text-company-dark group transition-colors mt-4 md:mt-0">
-              View all projects 
-              <ArrowRight size={18} className="ml-2 group-hover:translate-x-2 transition-transform" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg group">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src="/images/project-1.jpg" 
-                  alt="Office Building Project" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-3">
-                  <span className="text-sm font-medium bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Construction</span>
-                  <span className="text-sm text-gray-500">Addis Ababa</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Corporate Office Complex</h3>
-                <p className="text-gray-600 mb-4">A modern, sustainable office complex with state-of-the-art amenities and eco-friendly design elements.</p>
-                <Link to="/projects/corporate-office-complex" className="flex items-center font-medium text-company-primary hover:text-company-dark group transition-colors">
-                  View Details
-                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-2 transition-transform" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg group">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src="/images/project-2.jpg" 
-                  alt="Mining Project" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-3">
-                  <span className="text-sm font-medium bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Mining</span>
-                  <span className="text-sm text-gray-500">Oromia Region</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Gold Extraction Facility</h3>
-                <p className="text-gray-600 mb-4">An environmentally responsible gold extraction facility with cutting-edge technology and community integration.</p>
-                <Link to="/projects/gold-extraction-facility" className="flex items-center font-medium text-company-primary hover:text-company-dark group transition-colors">
-                  View Details
-                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-2 transition-transform" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg group">
-              <div className="h-64 overflow-hidden">
-                <img 
-                  src="/images/project-3.jpg" 
-                  alt="Import-Export Project" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-3">
-                  <span className="text-sm font-medium bg-green-100 text-green-800 px-3 py-1 rounded-full">Import-Export</span>
-                  <span className="text-sm text-gray-500">International</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Agricultural Export Program</h3>
-                <p className="text-gray-600 mb-4">A comprehensive program connecting Ethiopian farmers to international markets, ensuring fair trade and quality products.</p>
-                <Link to="/projects/agricultural-export-program" className="flex items-center font-medium text-company-primary hover:text-company-dark group transition-colors">
-                  View Details
-                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-2 transition-transform" />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
