@@ -34,13 +34,12 @@ const About = () => {
                 As Ethiopia positions itself as one of Africa's fastest-growing economies, South Hill View Trading PLC stands at the forefront of that transformation. We are driven by a mission to build strong international partnerships and create long-term value through integrity, professionalism, and visionary leadership.
               </p>
             </div>
-            <div>
-              <img 
-                src="/images/about-company.jpg" 
-                alt="South Hill View Headquarters" 
-                className="rounded-lg shadow-xl w-full h-auto" 
-              />
-            </div>
+            <div className="rounded-lg shadow-lg w-full h-64 bg-gray-100 flex items-center justify-center p-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-company-primary" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h89.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"/>
+                  <path fill="currentColor" d="M447.1 96c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64zm-192 64c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H255.1zM384 352c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32H384zM576 224c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm-48 64c-44.2 0-80 35.8-80 80v48c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32V368c0-44.2-35.8-80-80-80z" />
+                </svg>
+              </div>
           </div>
         </div>
       </section>
@@ -136,130 +135,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Team */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-heading mx-auto">Our Leadership Team</h2>
-            <p className="text-gray-700 max-w-3xl mx-auto">
-              Our company is led by experienced professionals who bring decades of industry expertise and a shared commitment to our vision and values.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Team Member 1 */}
-            <div className="text-center">
-              <div className="mb-4 relative group">
-                <img 
-                  src="/images/team-1.jpg" 
-                  alt="CEO" 
-                  className="w-full h-auto rounded-lg shadow-md" 
-                />
-                <div className="absolute inset-0 bg-company-primary bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-1">Abebe Kebede</h3>
-              <p className="text-company-primary font-medium mb-3">Chief Executive Officer</p>
-              <p className="text-gray-600 text-sm">
-                With over 25 years of experience in construction and international business.
-              </p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="text-center">
-              <div className="mb-4 relative group">
-                <img 
-                  src="/images/team-2.jpg" 
-                  alt="COO" 
-                  className="w-full h-auto rounded-lg shadow-md" 
-                />
-                <div className="absolute inset-0 bg-company-primary bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-1">Sara Hailu</h3>
-              <p className="text-company-primary font-medium mb-3">Chief Operations Officer</p>
-              <p className="text-gray-600 text-sm">
-                Leading our operational excellence with expertise in logistics and trade.
-              </p>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="text-center">
-              <div className="mb-4 relative group">
-                <img 
-                  src="/images/team-3.jpg" 
-                  alt="CFO" 
-                  className="w-full h-auto rounded-lg shadow-md" 
-                />
-                <div className="absolute inset-0 bg-company-primary bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-1">Dawit Tesfaye</h3>
-              <p className="text-company-primary font-medium mb-3">Chief Financial Officer</p>
-              <p className="text-gray-600 text-sm">
-                Managing our financial strategy with a background in international finance.
-              </p>
-            </div>
-
-            {/* Team Member 4 */}
-            <div className="text-center">
-              <div className="mb-4 relative group">
-                <img 
-                  src="/images/team-4.jpg" 
-                  alt="CTO" 
-                  className="w-full h-auto rounded-lg shadow-md" 
-                />
-                <div className="absolute inset-0 bg-company-primary bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" className="h-10 w-10 bg-white rounded-full flex items-center justify-center text-company-primary hover:bg-company-accent transition-all">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-1">Tigist Alemu</h3>
-              <p className="text-company-primary font-medium mb-3">Head of Strategy</p>
-              <p className="text-gray-600 text-sm">
-                Driving our strategic initiatives with insights in emerging markets.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link to="/team" className="btn-primary">
-              Meet Our Full Team
-            </Link>
           </div>
         </div>
       </section>

@@ -96,7 +96,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Our Location</h3>
-                    <p className="text-gray-600">Bole Sub-City, Woreda 03<br />Addis Ababa, Ethiopia</p>
+                    <p className="text-gray-600">Yeka Sub-City, Woreda 09<br />Addis Ababa, Ethiopia</p>
                   </div>
                 </div>
                 
@@ -107,18 +107,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Phone Number</h3>
-                    <p className="text-gray-600">+251 11 667 8900<br />+251 11 667 8901</p>
-                  </div>
-                </div>
-                
-                {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 bg-company-primary bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-company-primary" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-1">Email Address</h3>
-                    <p className="text-gray-600">info@southhillview.com<br />careers@southhillview.com</p>
+                    <p className="text-gray-600">0903488888</p>
                   </div>
                 </div>
                 
@@ -133,24 +122,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="mt-8">
-                <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a href="https://facebook.com" className="h-10 w-10 bg-company-primary rounded-full flex items-center justify-center text-white hover:bg-company-accent hover:text-company-primary transition-all">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://twitter.com" className="h-10 w-10 bg-company-primary rounded-full flex items-center justify-center text-white hover:bg-company-accent hover:text-company-primary transition-all">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="https://linkedin.com" className="h-10 w-10 bg-company-primary rounded-full flex items-center justify-center text-white hover:bg-company-accent hover:text-company-primary transition-all">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="https://instagram.com" className="h-10 w-10 bg-company-primary rounded-full flex items-center justify-center text-white hover:bg-company-accent hover:text-company-primary transition-all">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
+            
             </div>
             
             {/* Contact Form */}
@@ -276,29 +248,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Location</h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
-              Visit our headquarters in the heart of Addis Ababa, easily accessible from major transportation routes.
-            </p>
-          </div>
-          
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5344662408556!2d38.746842775479254!3d9.005942739216767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1715186426597!5m2!1sen!2sus" 
-              width="100%" 
-              height="450" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-20">

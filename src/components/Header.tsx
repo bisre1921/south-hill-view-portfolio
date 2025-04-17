@@ -46,63 +46,10 @@ const Header = () => {
               </button>
               <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <Link to="/about" className="block px-4 py-2 hover:bg-gray-50">Company Profile</Link>
-                <Link to="/values" className="block px-4 py-2 hover:bg-gray-50">Our Values</Link>
               </div>
             </div>
             
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent text-foreground hover:text-company-primary">Services</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link to="/construction" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Construction</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              High-quality infrastructure projects and developments
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link to="/import-export" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Import & Export</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Global trade and logistics solutions
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link to="/mining" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Mining</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Exploration and development of mineral resources
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link to="/investment" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Investment</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Strategic investments in high-growth sectors
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-            
-            <Link to="/news" className="font-medium hover:text-company-primary transition-colors">News</Link>
+           
             <Link to="/contact" className="font-medium hover:text-company-primary transition-colors">Contact</Link>
           </nav>
 
