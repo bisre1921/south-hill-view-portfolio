@@ -75,6 +75,28 @@ const Header = () => {
               >
                 Home
               </Link>
+              
+              <div>
+                <button 
+                  className="flex items-center justify-between w-full font-medium py-2 hover:text-company-primary transition-colors"
+                  onClick={() => toggleDropdown('about')}
+                >
+                  About Us
+                  <ChevronDown size={16} className={activeDropdown === 'about' ? 'transform rotate-180' : ''} />
+                </button>
+                {activeDropdown === 'about' && (
+                  <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-200">
+                    <Link 
+                      to="/about" 
+                      className="block py-2 hover:text-company-primary"
+                      onClick={closeMenu}
+                    >
+                      Company Profile
+                    </Link>
+                  </div>
+                )}
+              </div>
+              
              
               
             
